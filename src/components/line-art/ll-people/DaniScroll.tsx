@@ -1,11 +1,11 @@
 import { ReactNode } from 'react';
-import { motion } from "framer-motion";
+import { motion, Transition } from "framer-motion";
 
 interface DaniScrollProps {
     children: ReactNode;
 }
 const DaniScroll = ({children}: DaniScrollProps) => {
-    const transition = { duration: 8, ease: "easeInOut", repeat: Infinity, repeatType: "reverse" };
+    const transition: Transition = { duration: 8, ease: "easeInOut", repeat: Infinity, repeatType: "reverse" };
     return (
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="451" height="437">

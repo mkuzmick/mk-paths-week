@@ -1,13 +1,13 @@
 "use client"
 
 import { ReactNode } from 'react';
-import { motion } from "framer-motion";
+import { motion, Transition } from "framer-motion";
 
 interface DaniProps {
-    children: ReactNode;
+    // children: ReactNode;
 }
-const Dani = ({children}: DaniProps) => {
-    const transition = { duration: 8, ease: "easeInOut", repeat: Infinity, repeatType: "reverse" };
+const Dani = () => {
+    const transition: Transition = { duration: 8, ease: "easeInOut", repeat: Infinity, repeatType: "reverse" };
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
