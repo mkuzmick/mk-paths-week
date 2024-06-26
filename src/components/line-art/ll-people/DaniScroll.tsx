@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { motion } from "framer-motion";
 
 interface DaniScrollProps {
     children: ReactNode;
